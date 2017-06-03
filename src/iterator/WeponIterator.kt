@@ -1,6 +1,6 @@
 package iterator
 
-class WeponSelect(private val weponList: WeponList) : Iterator {
+class WeponIterator(private val weponList: WeponList) : Iterator {
 
     private var index: Int = 0
 

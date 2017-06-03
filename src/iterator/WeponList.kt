@@ -3,7 +3,7 @@ package iterator
 class WeponList(count: Int): Aggreagte {
 
     override fun iterator(): Iterator {
-        return WeponSelect(this)
+        return WeponIterator(this)
     }
 
     private var wepons: Array<Wepon?> = arrayOfNulls(count)
