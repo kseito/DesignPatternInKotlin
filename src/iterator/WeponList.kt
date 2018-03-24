@@ -6,15 +6,15 @@ class WeponList(count: Int): Aggreagte {
         return WeponIterator(this)
     }
 
-    private var wepons: Array<Wepon?> = arrayOfNulls(count)
+    private var wepons: Array<Weapon?> = arrayOfNulls(count)
     private var count: Int = 0
 
-    fun add(wepon: Wepon) {
+    fun add(wepon: Weapon) {
         wepons[count] = wepon
         count++
     }
 
-    fun getWeponAt(index: Int): Wepon? {
+    fun getWeponAt(index: Int): Weapon? {
         return wepons[index]
     }
 
